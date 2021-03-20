@@ -1,17 +1,12 @@
 $(document).ready(function () {
 
-    //common 
+    //scroll animation event
     var lastScrollTop = 0,
         delta = 15;
     $(window).scroll(function (event) {
-
-
         var st = $(this).scrollTop();
         if (Math.abs(lastScrollTop - st) <= delta)
-            return; // 스크롤값을 받아서 리턴한다.
-
-
-        //스크롤트리거
+            return;
         $('[class *= ani-start]').each(function (i) {
             var bottom_of_object = $(this).offset().top + $(this).outerHeight() * .3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -27,18 +22,17 @@ $(document).ready(function () {
 
 
 
-        //헤더 스크롤 
+        //header scroll animation
         if ((st > lastScrollTop) && (lastScrollTop > 0)) {
-            // downscroll code
+            // downscroll
             if ($('.ham').hasClass('active')) {
-
             } else {
                 $('#header').css('opacity', '0')
                 $('#header').removeClass('fixed');
             }
 
         } else {
-            // upscroll code
+            // upscroll
             if (st < 80) {
                 $('#header').removeClass('fixed');
             } else {
@@ -50,7 +44,7 @@ $(document).ready(function () {
 
 
 
-        // 푸터픽스
+        // footer fix
         if (st > $('#wrap').offset().top * .5) {
             $('.footer').css('z-index', '9')
         } else {
@@ -61,7 +55,7 @@ $(document).ready(function () {
     });
 
 
-    //햄버거 메뉴 온오프
+    //mobile menu on/off
     $('.ham').click(function (ev) {
         ev.preventDefault();
         $(this).toggleClass('active');
@@ -74,9 +68,9 @@ $(document).ready(function () {
 
 
 
-    //메인페이지
+//mainpage
 
-    //메인화면 스크롤 클릭
+    //main visual scroll button event
     $('.scroll').click(function () {
         var scrollPosition = $('#wrap').offset().top;
         $('html,body').animate({
@@ -84,9 +78,7 @@ $(document).ready(function () {
         }, 500);
     });
 
-
-
-    //메인페이지 브랜드 슬라이더
+    //brand slider
     $('.brand_list').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -102,29 +94,28 @@ $(document).ready(function () {
         focusOnSelect: true
     });
 
-    //메인페이지 서비스 슬라이더
+    //service slider
     $('.service_list').slick({
         centerMode: true,
         centerPadding: '25%',
         slidesToShow: 1,
-
     });
 
 
 
 
 
-    //서브페이지
+//subpages
 
-    //about페이지 슬라이드
+    //about page mixed slider
     $('.mixed_list').slick({
         autoplay: true,
         autoplaySpeed: 4000,
         centerMode: true,
         slidesToShow: 1,
-
     });
 
+    //about page tab menu 
     $('.tab_content').hide();
     $('.tab_content:first').show();
 
@@ -134,7 +125,6 @@ $(document).ready(function () {
         $('.tab_content').hide();
         var activeTab = $(this).attr('rel');
         $('#' + activeTab).fadeIn();
-
     });
 
 });
