@@ -16,7 +16,6 @@ latout
 #header{width: 100%; position: fixed;left: 50%;z-index: 9999; transform: translate(-50%,0);transition: all .5s;}
 #main_visual{position: relative;top: 0; width: 100%; height: 100vh;font-family: 'Playfair Display', serif;overflow: hidden}
 #service{margin: 0 auto 180px}
-#about_us{}
 #warranty{margin: 180px auto}
 #collection{margin: 240px auto 180px}
 #brand{margin: 180px 0}
@@ -209,7 +208,6 @@ media query
 */
 
 @media(max-width:1550px){
-    #wrap{}
 	.container{width: 100%;padding: 0 30px;box-sizing: border-box;}
 }
 

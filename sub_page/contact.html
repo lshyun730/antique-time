@@ -11,7 +11,7 @@
     <!-- keywords -->
     <meta name="keywords" content="creative, modern, clean, html5, css3, portfolio">
     <!-- favicon -->
-    <link rel="shortcut icon" href="images/common/antique_time_favicon.ico">
+    <link rel="shortcut icon" href="../images/common/antique_time_favicon.ico">
     <!--css-->
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -71,27 +71,54 @@
 
     <!--wrap S-->
     <div id="wrap">
-        <section id="contact" class="container">
-            <article class="message ani-start ani_stop">
-                <h3>SAND US A MESSAGE</h3>
-                <form>
+
+        <section id="contact_main" class="container ani-start ani_stop">
+            <h3>How we can help</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                been the industry’s standard dummy text ever since. Lorem Ipsum has been the industry. Lorem 
+                Ipsum is simply dummy text of the printing and industry.</p>
+            <p class="btn"><a href="#contact" class="btn_style1"><em></em><span>Start Project</span></a></p>
+        </section>
+
+        <section id="contact_info">
+            <article class="info_img ani-start-fadeLeftReverse ani_stop">
+                <img src="../images/contact/contact_img_info.png" alt="contact imgage">
+            </article>
+            <article class="info ani-start-fadeLeft ani_stop">
+                <div class="adress">
+                    <i class="fas fa-map-marked"></i>
+                    <p class="title">Contact Adress</p>
+                    <p>12345 Prytania Street<br>PMB # 678 New Orleans, LA 90123</p>
+                </div>
+                <div class="message">
+                    <i class="fas fa-comment-dots"></i>
+                    <p class="title">Lets Talk</p>
+                    <p>Phone : 123-4567-8900<br>Fex : 100-1024-1046</p>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope-open"></i>
+                    <p class="title">Email Us</p>
+                    <p>info@antiquetine.com<br>info@antiquetine.com</p>
+                </div>
+                <div class="time">
+                    <i class="fas fa-clock"></i>
+                    <p class="title">Working Hours</p>
+                    <p>Mon to Sat – 9 AM to 11 PM<br>Sunday – 10 AM to 6 PM</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact" class="container ani-start ani_stop">
+            <h3>SAND US A MESSAGE</h3>
+            <form class="contact_message">
+                <div class="row">
                     <label><input type="text" placeholder="YOU'RE NAME"></label>
                     <label><input type="text" placeholder="EMAIL"></label>
-                    <textarea rows="10" onclick="this.value=''">MESSAGE</textarea>
-                    <lable><input type="submit" value="SAND"></lable>
-                </form>
-            </article>
-            <article class="info ani-start ani_stop">
-                <h3>CONTACT INFORMATION</h3>
-                <p class="addr">12345 Ptytamia Street<br>PMB #678 New Orleans, LA 90123</p>
-                <p class="phone">123-4567-8900</p>
-                <p class="email">info@antiquetime.com</p>
-                <ul class="social">
-                    <li><a href="#"><img src="../images/contact/contact_ic_twtter.png" alt="twtter"></a></li>
-                    <li><a href="#"><img src="../images/contact/contact_ic_insta.png" alt="instagram"></a></li>
-                    <li><a href="#"><img src="../images/contact/contact_ic_facebook.png" alt="facebook"></a></li>
-                </ul>
-            </article>
+                </div>
+                <textarea rows="8" placeholder="MESSAGE"></textarea>
+                <!-- <lable><input type="submit" value="SAND"></lable> -->
+                <button type="submit" class="btn"><a href="#" class="btn_style1"><em></em><span>Sand Message</span></a></button>
+            </form>
         </section>
     </div>
     <!--wrap E-->
