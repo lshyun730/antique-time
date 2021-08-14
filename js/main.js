@@ -13,14 +13,7 @@ $(document).ready(function () {
             if (bottom_of_window > bottom_of_object) {
                 $(this).removeClass('ani_stop');
             }
-            if (bottom_of_window <= bottom_of_object) {
-                if ($('[class *= ani-start]').hasClass('ani')) {
-                    $(this).addClass('ani_stop');
-                }
-            }
         });
-
-
 
         //header scroll animation
         if ((st > lastScrollTop) && (lastScrollTop > 0)) {
@@ -42,8 +35,6 @@ $(document).ready(function () {
         }
         lastScrollTop = st;
 
-
-
         // footer fix
         if (st > $('#wrap').offset().top * .5) {
             $('.footer').css('z-index', '9')
@@ -61,9 +52,6 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $('.mNav .gnb').toggleClass('visible');
     });
-
-
-
 
 
 
@@ -103,8 +91,6 @@ $(document).ready(function () {
 
 
 
-
-
 //subpages
 
     //about page mixed slider
@@ -120,6 +106,7 @@ $(document).ready(function () {
     $('.tab_content:first').show();
 
     $('ul.snb li').click(function () {
+        $('.tab_content [class *= ani-start]').addClass('ani_stop');
         $('ul.snb li').removeClass('active').css('color', '#808080');
         $(this).addClass('active').css('color', '#000');
         $('.tab_content').hide();
