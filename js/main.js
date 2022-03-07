@@ -4,9 +4,8 @@ $(document).ready(function () {
     var lastScrollTop = 0,
         delta = 15;
     $(window).scroll(function (event) {
-        var st = $(this).scrollTop();
         if (Math.abs(lastScrollTop - st) <= delta)
-            return;
+        return;
         $('[class *= ani-start]').each(function (i) {
             var bottom_of_object = $(this).offset().top + $(this).outerHeight() * .3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -14,7 +13,8 @@ $(document).ready(function () {
                 $(this).removeClass('ani_stop');
             }
         });
-
+        
+        var st = $(this).scrollTop();
         //header scroll animation
         if ((st > lastScrollTop) && (lastScrollTop > 0)) {
             // downscroll
@@ -66,6 +66,13 @@ $(document).ready(function () {
         }, 500);
     });
 
+    //service slider
+    $('.service_list').slick({
+        centerMode: true,
+        centerPadding: '25%',
+        slidesToShow: 1,
+    });
+
     //brand slider
     $('.brand_list').slick({
         slidesToShow: 1,
@@ -82,12 +89,7 @@ $(document).ready(function () {
         focusOnSelect: true
     });
 
-    //service slider
-    $('.service_list').slick({
-        centerMode: true,
-        centerPadding: '25%',
-        slidesToShow: 1,
-    });
+
 
 
 

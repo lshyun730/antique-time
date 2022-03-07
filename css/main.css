@@ -11,7 +11,7 @@ latout
 */
 
 #wrap{background: #fff; position: relative;z-index: 99;}
-.container{width: 1540px;margin: 0 auto;}
+.container{width: 1240px;margin: 0 auto;}
 
 #header{width: 100%; position: fixed;left: 50%;z-index: 9999; transform: translate(-50%,0);transition: all .5s;}
 #main_visual{position: relative;top: 0; width: 100%; height: 100vh;font-family: 'Playfair Display', serif;overflow: hidden}
@@ -213,11 +213,8 @@ media query
 -----------------------
 */
 
-@media(max-width:1550px){
-	.container{width: 100%;padding: 0 30px;box-sizing: border-box;}
-}
-
 @media(max-width:1240px){
+    .container{width: 100%;padding: 0 30px;box-sizing: border-box;}
     h3{font-size: 36px;}
     
     #brand .blist .brand_info{width: 100%;}
