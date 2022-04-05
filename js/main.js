@@ -20,7 +20,7 @@ $(document).ready(function () {
             // downscroll
             if ($('.ham').hasClass('active')) {
             } else {
-                $('#header').css('opacity', '0')
+                $('#header').css('transform', 'translate(-50%, -100px)')
                 $('#header').removeClass('fixed');
             }
 
@@ -30,7 +30,7 @@ $(document).ready(function () {
                 $('#header').removeClass('fixed');
             } else {
                 $('#header').addClass('fixed');
-                $('#header').css('opacity', '1')
+                $('#header').css('transform', 'translate(-50%, 0)')
             }
         }
         lastScrollTop = st;
