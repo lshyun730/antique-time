@@ -13,9 +13,14 @@
 회사의 주력상품의 소개 및 지점의 정보 등을 알아보는 사이트이다<br>
 アンティーク家具を販売する会社のホームページ。
 会社と主力製品の紹介や支店の情報などを調べることができる。
+<br>
 
-Click [demo](https://lshyun730.github.io/antique-time/index.html)
-<br><br>
+⭐ Demo
+
+<a href = "https://lshyun730.github.io/antique-time/index.html"><img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/>
+</a>
+
+<br>
 
 ### ✔ Technology Stack
 
